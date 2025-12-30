@@ -127,7 +127,7 @@ def ffps_date(real_ffps, fake_ffps):
         details_list.append({
             'ffp_number' : ffn,
         
-        # fake ffps using the same email formats (xxxxxxxx1234@gmail.com)
+        # fake ffps using the same email formats (xxxxxxxx1234@user-verify.net)
             'email' : f'{fake_ffp_email}@user-verify.net', 
             'phone_number' : fake.phone_number(),
             'country' : fake_ffp_country,
