@@ -76,9 +76,9 @@
         .hdr {
             background: linear-gradient(145deg, var(--ink), #1C252D);
             color: #fff;
-            border-radius: 16px;
-            padding: 18px 22px;
-            margin: 6px 0 16px 0;
+            border-radius: 12px;
+            padding: 12px 18px;
+            margin: 4px 0 8px 0;
             box-shadow: 0 8px 20px rgba(43, 61, 79, 0.15);
             display: flex;
             justify-content: space-between;
@@ -103,7 +103,7 @@
 
         h1 {
             margin: 0;
-            font-size: 26px;
+            font-size: 22px;
             line-height: 1.08;
             font-weight: 500;
             letter-spacing: -0.25px;
@@ -112,7 +112,7 @@
         }
 
         .sub {
-            font-size: 15.5px;
+            font-size: 13px;
             color: var(--gold);
             font-weight: 700;
             letter-spacing: 1px;
@@ -138,8 +138,8 @@
         .card {
             background: rgb(255, 255, 255);
             border: none;
-            border-radius: 16px;
-            padding: 16px;
+            border-radius: 12px;
+            padding: 12px;
             box-shadow: 0 4px 20px rgba(43, 61, 79, 0.06);
             height: 100%;
 
@@ -153,10 +153,10 @@
 
         li,
         p {
-            font-size: 13px;
-            line-height: 1.6;
+            font-size: 11.5px;
+            line-height: 1.5;
             color: var(--ink);
-            margin: 0 0 6px 0;
+            margin: 0 0 4px 0;
             hyphens: auto;
         }
 
@@ -173,17 +173,17 @@
 
         .rule {
             border-top: 1px solid var(--gold-light);
-            margin: 10px 0;
+            margin: 6px 0;
         }
 
         .label {
             display: inline-block;
-            font-size: 14.5px;
+            font-size: 12.5px;
             font-weight: 700;
-            letter-spacing: 1.5px;
+            letter-spacing: 1.2px;
             color: var(--gold);
             font-family: inherit;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         /* --- tables --- */
@@ -334,7 +334,7 @@
                 font-size: 13px;
                 margin-bottom: 8px;
             }
-            
+
             ul {
                 padding-left: 20px;
             }
@@ -366,6 +366,7 @@
 </head>
 
 <body>
+    <!-- Page 1 -->
     <main class="page" style="padding-top: 0;">
         <header class="hdr">
             <div class="h1-wrap">
@@ -376,8 +377,44 @@
             </div>
         </header>
 
-        <section class="grid" style="grid-template-columns: 1fr; align-items: start;">
+        <section class="grid" style="grid-template-columns: 1fr 1fr 1fr; align-items: start;">
+            <section class="card">
+                <span class="label">Warning Signs</span>
+                <ul>
+                    <li>Similar email formats/incorrect details</li>
+                    <li>Past flights claimed retroactively on new accounts</li>
+                    <li>Narrow window between claim and redemptions</li>
+                    <li>One-way tickets to destinations</li>
+                    <li>Immediate rewards signaling quick gain intention</li>
+                    <li><strong>Possible account takeover</strong> for reported cases</li>
+                </ul>
+            </section>
+            
+            <section class="card">
+                <span class="label">Recommended Checks</span>
+                <ul>
+                    <li>New FPP account details (Phone, email, country..etc)</li>
+                    <li>Transaction history since account creation</li>
+                    <li>Compare <strong>guest names on tickets vs. account</strong></li>
+                    <li><strong>Locations vs booked flights origins/destination</strong></li>
+                    <li>Destination flights redeemed concentration</li>
+                    <li>Retroclaimed flights volumes history & routes patterns</li>
+                    <li>Password or <strong>account details change</strong> for reported cases</li>
+                </ul>
+            </section>
+            
+            <section class="card">
+                <span class="label">Suspected Fraud Actions</span>
+                <ul>
+                    <li><strong>Suspension/hold</strong> for accounts matching patterns</li>
+                    <li><strong>Identify and hold</strong> any pending/future dated transactions</li>
+                    <li>Correlate <strong>similar fingerprint</strong>(account details, emails, IPs..) accross other accounts</li>
+                    <li>Track significant redemptions/claims for unusual transactions</li>
+                </ul>
+            </section>
+        </section>
 
+        <section class="grid" style="grid-template-columns: 1fr 1fr 1fr; align-items: start; margin-top: 3px;">
             <section class="card">
                 <span class="label">General measures to reduce fraud</span>
                 <ul>
@@ -391,9 +428,9 @@
                     <li>Passkey authentication for redemptions, retroclaims, profile updates, logins from new devices,
                         or reward shop transactions</li>
                 </ul>
+            </section>
 
-                <div class="rule"></div>
-
+            <section class="card">
                 <span class="label">Supporting customer during fraud</span>
                 <ul>
                     <li>Coordinate with partners/stakeholders to stop any future transactions/orders where possible</li>
@@ -403,9 +440,9 @@
                     <li>If suspended due to confirmed account takeover, re-authenticate member before unlocking & force
                         stricter security measures</li>
                 </ul>
+            </section>
 
-                <div class="rule"></div>
-
+            <section class="card">
                 <span class="label">Reward shop redemptions</span>
                 <ul>
                     <li>Accounts created less than 7 days and redeeming past flights at a quick rate get a hold
@@ -422,4 +459,5 @@
         </section>
     </main>
 </body>
+
 </html>
